@@ -40,3 +40,25 @@ ul.innerHTML = `
 
 `
 project_2.appendChild(ul)
+box = document.createElement('div')
+box.style.display = 'flex'
+box.style.gap = '10px'
+box.style.flexWrap = 'wrap'
+
+
+for (let i = 0; i < 20; i++) {
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <p>Box</p>
+`
+    div.style.borderRadius = '10px'
+    div.style.width = '100px'
+    div.style.height = '100px'
+    div.style.backgroundColor = 'red'
+    div.style.textAlign = 'center'
+    div.style.padding = '10px'
+
+    box.appendChild(div)
+}
+project_2.append(box)
