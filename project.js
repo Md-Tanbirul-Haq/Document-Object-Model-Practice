@@ -18,6 +18,7 @@ project_1.innerHTML = `
 
 const project = document.getElementsByClassName('project')
 
+
 for (const p of project) {
     p.style.color = 'White'
     p.style.fontSize = '40px'
@@ -27,3 +28,15 @@ for (const p of project) {
 
     `
 }
+
+
+const project_2 = document.getElementById('project_2')
+console.log(project_2.innerText)
+const ul = document.createElement('ul')
+
+ul.innerHTML = `
+<li>project_1</li>
+<li>project_2</li>
+
+`
+project_2.appendChild(ul)
