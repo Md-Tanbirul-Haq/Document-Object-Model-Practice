@@ -15,3 +15,15 @@ project_1.innerHTML = `
 <h1>project_1 Update</h1>
 
 `
+
+const project = document.getElementsByClassName('project')
+
+for (const p of project) {
+    p.style.color = 'White'
+    p.style.fontSize = '40px'
+    p.style.fontWeight = 'bold'
+    p.innerHTML = `
+    <h1><u>${p.innerText}</u></h1>
+
+    `
+}
