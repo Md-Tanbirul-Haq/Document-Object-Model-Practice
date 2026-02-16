@@ -7,3 +7,11 @@ for (const v of value) {
 
     v.style.padding = '10px'
 }
+
+const project_1 = document.getElementById('project_1')
+console.log(project_1.innerText)
+project_1.innerText = "project_1 Update"
+project_1.innerHTML = `
+<h1>project_1 Update</h1>
+
+`
