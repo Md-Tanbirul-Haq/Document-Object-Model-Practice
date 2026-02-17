@@ -62,3 +62,4 @@ for (let i = 0; i < 20; i++) {
     box.appendChild(div)
 }
 project_2.append(box)
+
