@@ -20,6 +20,14 @@
             <h2>Comment List</h2>
             <div id="comment">
 
+                <ol>
+                    <li>coment 1</li>
+                    <li>coment 2</li>
+                    <li>coment 3</li>
+                    <li>coment 4</li>
+                    <li>coment 5</li>
+                </ol>
+
             </div>
 
         </div>
@@ -31,12 +39,20 @@
 
     <script>
         document.getElementById('add_comment').addEventListener('click', function () {
-            Comment_text = document.getElementById('comment_text').value
+            let text = document.getElementById('comment_text')
+            let Comment_text = text.value
             console.log(Comment_text)
             const p = document.createElement('p')
             p.innerText = Comment_text
+            const comment = document.getElementById('comment')
+            comment.appendChild(p)
+            text.value = ' '
+        })
 
+        document.getElementById('comment').addEventListener('click', function (event) {
 
+            console.log(event.target)
+            event.target.remove()
 
         })
     </script>
