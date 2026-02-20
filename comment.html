@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment box</title>
+</head>
+<style>
+    .coantainer {
+        margin-top: 100px;
+        margin-left: 100px;
+        /* text-align: center; */
+    }
+</style>
+
+<body>
+    <div class="coantainer">
+        <div>
+            <h2>Comment List</h2>
+            <div id="comment">
+
+            </div>
+
+        </div>
+        <textarea name="" id="comment_text" cols="20" rows="5"></textarea>
+        <br>
+
+        <button id="add_comment">Add comment</button>
+    </div>
+
+    <script>
+        document.getElementById('add_comment').addEventListener('click', function () {
+            Comment_text = document.getElementById('comment_text').value
+            console.log(Comment_text)
+            const p = document.createElement('p')
+            p.innerText = Comment_text
+
+
+
+        })
+    </script>
+
+</body>
+
+</html>
